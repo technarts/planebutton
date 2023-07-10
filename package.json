@@ -1,0 +1,38 @@
+{
+  "name": "@technarts/planebutton",
+  "version": "1.0.2",
+  "description": "",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "technarts",
+  "license": "NO LICENSE",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@mui/material": "^5.13.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@technarts/tooltip": "^1.0.0"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
